@@ -51,21 +51,13 @@ h1{
     text-shadow:3px 3px #000000;
 }
 
-input{
+input:not([type=submit]){
+    color:#ff6600;
     outline:none;
 }
 
-
-
 /******END GLOBALS********/
 /*********Header Element*************/
-
-#logo{
-	width:275px;
-	position:relative;
-	top:10px;
-	left:10px;
-}
 
 #pageIcon{
     font-family: 'Unxgala';
@@ -76,12 +68,6 @@ input{
     padding: 0 15px;
     margin: 0px auto;
     text-shadow:3px 3px #000000;
-}
-
-#pageName{
-	position:relative;
-	top:35px;
-	left:-55px;
 }
 
 header p{
@@ -141,7 +127,7 @@ div#cta div#formContainer{
     display: block;
     position:relative;
     float:right;
-    margin-right:15px;
+    margin-right:25px;
     top: -50px;
     width:286px;
 }
@@ -154,11 +140,9 @@ div#cta div#formContainer{
     }
     
     section article p{
-		position:relative;
-        width:215px;
+        width:500px;
         float:left;
         margin:0px 15px;
-		margin-bottom: 40px;
     }
     
     section article aside p{
@@ -233,7 +217,7 @@ footer div{
         background:-o-linear-gradient(top, #f09c65 5%, #ff6600 100%);
         background:-ms-linear-gradient(top, #f09c65 5%, #ff6600 100%);
         background:linear-gradient(to bottom, #f09c65 5%, #ff6600 100%);
-        ;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09c65', endColorstr='#ff6600',GradientType=0);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09c65', endColorstr='#ff6600',GradientType=0);
         
         background-color:#f09c65;
         
