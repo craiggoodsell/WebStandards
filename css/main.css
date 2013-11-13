@@ -300,3 +300,299 @@ textarea {
 .no-js {
 
 }
+
+
+
+
+
+
+
+
+
+/***************************************************************************************/
+
+
+/*                GALAXERIES.CSS CODE                                      */
+
+
+/****************************************************************************************/
+
+/* 
+    Document   : galaxery
+    Created on : Nov 7, 2013, 9:30:00 PM
+    Author     : craiggoodsell
+    Description:
+*/
+
+/*********GLOBALS**********/
+
+@font-face {
+	font-family: 'Unxgala';
+    	src: url('fonts/Unxgala.ttf');
+}
+
+body{
+    margin:0px auto;
+    padding:0px;
+    background:#000000;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    color:#ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #ff6600;
+}
+
+a:hover{
+    color:#ffffff;
+}
+
+ul{
+    padding:0;
+    margin:0;
+}
+
+li{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+h1{
+    font-family: 'Unxgala';
+    font-size: 30px;
+    margin:0px auto;
+    padding: 0px;
+    display:inline;
+    text-shadow:3px 3px #000000;
+}
+
+input{
+    outline:none;
+}
+
+
+
+/******END GLOBALS********/
+/*********Header Element*************/
+
+#logo{
+	width:275px;
+	position:relative;
+	top:10px;
+	left:10px;
+}
+
+#pageIcon{
+    font-family: 'Unxgala';
+    color:#ff6600;
+    font-size:120px;
+    float:left;
+    line-height: 120px;
+    padding: 0 15px;
+    margin: 0px auto;
+    text-shadow:3px 3px #000000;
+}
+
+#pageName{
+	position:relative;
+	top:35px;
+	left:-55px;
+        width:276px;
+}
+
+header p{
+    line-height: 0px;
+    font-size: 12px;
+    margin: 0px auto;
+}
+
+    /****** Nav Menu *****/
+
+nav{
+    clear:left;
+}
+
+nav a{
+    margin:0 auto;
+    display:block;
+    height:25px;
+    line-height: 25px;
+}
+
+nav a:hover{
+    color:#ffffff;
+}
+
+nav li a:hover{
+    background:#444444;
+}
+
+nav li{
+    float:left;
+    width:125px;
+    text-align:center;
+}
+
+nav ul{
+    width:1125px;
+    margin:0px auto;
+}
+
+    /*******End Nav**********/
+/*******End Header**********/
+/*******Main Content**********/
+    /*******CTA*************/
+div#cta{
+    display:block;
+    width:1025px;
+    margin:0px auto;
+    text-align: center;
+}
+
+div#cta img{
+    z-index: -1;
+}
+
+div#cta div#formContainer{
+    display: block;
+    position:relative;
+    float:right;
+    margin-right:15px;
+    top: -50px;
+    width:286px;
+}
+    
+    /******END CTA*********/
+    /******Section Content***/
+    section{
+        width:1025px;
+        margin:0px auto;
+    }
+    
+    section article p{
+		position:relative;
+        width:215px;
+        float:left;
+        margin:0px 15px;
+		margin-bottom: 40px;
+    }
+    
+    section article aside p{
+        width:260px;
+        margin:0px 15px;
+        float:right;
+    }
+    
+    .slide{
+        float:right;
+        margin-right:100px;
+        width:150px;
+        position: relative;
+        top:20px;
+    }
+    /******END SECTION CONTENT**/
+    /******Footer******/
+    
+footer{
+    clear:left;
+    margin:0px auto;
+    overflow:hidden;
+    text-align: center;
+}
+
+footer a{
+    margin:0 auto;
+    display:block;
+    height:25px;
+    line-height: 25px;
+    font-size: 12px;
+}
+
+footer a:hover{
+    color:#ffffff;
+}
+
+footer ul{
+    margin:0px auto;
+    overflow:hidden;
+    text-align:center;
+    width:500px;
+} 
+
+footer li{
+    width:125px;
+    text-align:center;
+    display:block;
+    float:left;
+}
+
+footer p {
+    font-size:11px;
+    height: 0px;
+    position: relative;
+    line-height: 0px;
+}
+
+footer div{
+    margin:0px auto;
+    text-align:center;
+}
+    
+    /******END FOOTER****/
+    
+    
+    /*** CSS BUTTON ***/
+    
+    
+    
+    .myButton {
+        
+        -moz-box-shadow:inset 0px 1px 0px 0px #ffe0b5;
+        -webkit-box-shadow:inset 0px 1px 0px 0px #ffe0b5;
+        box-shadow:inset 0px 1px 0px 0px #ffe0b5;
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f09c65), color-stop(1, #ff6600));
+        background:-moz-linear-gradient(top, #f09c65 5%, #ff6600 100%);
+        background:-webkit-linear-gradient(top, #f09c65 5%, #ff6600 100%);
+        background:-o-linear-gradient(top, #f09c65 5%, #ff6600 100%);
+        background:-ms-linear-gradient(top, #f09c65 5%, #ff6600 100%);
+        background:linear-gradient(to bottom, #f09c65 5%, #ff6600 100%);
+        /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09c65', endColorstr='#ff6600',GradientType=0);
+        */
+        background-color:#f09c65;
+        
+        -moz-border-radius:7px;
+        -webkit-border-radius:7px;
+        border-radius:7px;
+        
+        display:inline-block;
+        color:#ffffff;
+        font-family:Trebuchet MS;
+        font-size:17px;
+        font-weight:bold;
+        padding:0px 5px;
+        text-decoration:none;
+        
+        text-shadow:0px 1px 0px #8f7f24;
+        
+    }
+    .myButton:hover {
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff6600), color-stop(1, #f09c65));
+        background:-moz-linear-gradient(top, #ff6600 5%, #f09c65 100%);
+        background:-webkit-linear-gradient(top, #ff6600 5%, #f09c65 100%);
+        background:-o-linear-gradient(top, #ff6600 5%, #f09c65 100%);
+        background:-ms-linear-gradient(top, #ff6600 5%, #f09c65 100%);
+        background:linear-gradient(to bottom, #ff6600 5%, #f09c65 100%);
+        /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6600', endColorstr='#f09c65',GradientType=0);
+        */
+        background-color:#ff6600;
+    }
+    .myButton:active {
+        position:relative;
+        top:1px;
+    }
