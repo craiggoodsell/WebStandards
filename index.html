@@ -5,6 +5,7 @@
     <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
+        
         <title>GALAXERY</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
@@ -12,18 +13,25 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>');</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" href="img/favicon.ico" />
+        <!--<link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">-->
+        <link rel="stylesheet" href="css/galaxery.css">
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+        <script src="js/slide.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="foxframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&sqi=2&ved=0CEgQjBAwAQ&url=http%3A%2F%2Fwww.mozilla.org%2Fen-US%2Ffirefox%2Fall%2F&ei=yQ9zUubBNpCFkQeCsoHoAQ&usg=AFQjCNEHQGdx-EMlKV7b4r31LNqgNEWeUw&sig2=VI398uzHM448ySFLRfmbMw&bvm=bv.55819444,d.eW0">Install Mozilla Firefox</a> to better experience this site.</p>
         <![endif]-->
         <header>
-            <span id="pageIcon">&Gamma;</span>
-            <h1>GALAXERY</h1>
-            <p>Photo Gallery To The Stars!</p>
+			<div id="logo">
+				<span id="pageIcon">&Gamma;</span>
+				<div id="pageName">
+				<h1>GALAXERY</h1>
+				<p>Photo Gallery To The Stars!</p>
+				</div>
+			</div>
             <nav>
                 <ul>
                     <li>
@@ -54,22 +62,14 @@
                         <a href="#">About</a>
                     </li>
                 </ul>
-                <!--
-                1) Star ( Self luminous ) 
-                2) Planet ( Orbits the Sun, rocky or gaseous, atmosphere or no atmosphere, has moons or none ) 
-                3) Moon ( Orbits planets, rocky, atmosphere or no atmosphere ) 
-                4) Comet ( Orbits Sun, rocky/icey, atmosphere only when close to Sun, relatively short life span ) 
-                5) Asteroid ( Orbits Sun, rocky, small, no atmosphere ) 
-                6) Miscellaneous ( Space dust, man-made objects e.g. satellites, space probes )
-                -->
             </nav>
         </header>
         <div id="cta">
             <img src="img/milkyway.jpg" alt="Form Image" />
             <div id="formContainer">
-                <form action="search.php" method="post">
-                    <input type="text" id="searchtxt" name="searchtxt" placeholder="Search The Stars">
-                    <input type="submit" id ="submit" name="submit">
+                <form method="post">
+                    <input type="search" id="searchtxt" name="searchtxt" placeholder="Search The Stars">
+                    <input type="submit" id ="search" name="search" value="Search">
                 </form>
             </div>
         </div>
@@ -78,16 +78,22 @@
                 <em>Your</em> Universe
             </h2>
             <article>
-                <div id="leftpara">
-                    <p>MIDDLE AREA FOR MAIN CONTENT!!!!</p><aside><h4>Word</h4><p>Define Word</p></aside>
-                </div>
-                <div id="rightpara">
-                    <p>Continue Content.</p>
-                </div>
+                    <p>Your apart of something <strong>Huge!</strong>
+                    Imagine you are on the equator and you are standing still.  You are still moving over 1000 mph while Earth rotates.  On top of that, you are moving over 60k mph around the sun.  </p><p>Then the solar system is moving through the galaxy at over 400k mph.  For the sake of ending the math, we will stop at the galaxy moving through the universe at over 2 million mph.  When you add everything up you are moving at well over 2.4 million mph while you are standing still.</p><p>  Galaxery is here to provide you with some of the scenery that you pass without being able to really see what it is that you are looking at.  Our gallaries cover Stars, Planets, Moons, and other celestial objects.  go ahead and click on one of our navigation links to start traveling the heavens 
+                    </p>
+                    <aside>
+                        <p>Lets go and explore the <a href="#" class="myButton">Universe</a></p>
+                    </aside>
+					<div class="slide">
+						<img src="img/planet1.jpg" alt="Planet">
+						<img src="img/planet2.jpg" alt="Planet">
+						<img src="img/sun1.jpg" alt="Sun">
+						<img src="img/comet1.jpg" alt="Comet">
+					</div>
             </article>
         </section>
         <footer>
-            <p>&copy;Copyright Info</p>
+            <div>
             <ul>
                <li>
                    <a href="#">Home Page</a>
@@ -101,7 +107,9 @@
                <li>
                    <a href="#">About</a>
                </li>
-           </ul>
+            </ul>
+            </div>
+            <p>&copy;&nbsp;2013</p>
         </footer>
     </body>
 </html>
