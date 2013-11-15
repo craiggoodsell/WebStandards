@@ -13,9 +13,9 @@
 }
 
 body{
-    margin:0px auto;
-    padding:0px;
-    background:#000000;
+    margin:0% auto;
+    padding:0%;
+    background:#000;
 }
 
 p, h1, h2, h3, h4, h5, h6{
@@ -32,49 +32,52 @@ a:hover{
 }
 
 ul{
-    padding:0;
-    margin:0;
+    padding:0%;
+    margin:0%;
 }
 
 li{
     list-style: none;
-    padding:0;
-    margin:0;
+    padding:0%;
+    margin:0%;
 }
 
 h1{
     font-family: 'Unxgala';
-    font-size: 30px;
-    margin:0px auto;
-    padding: 0px;
+    font-size: 1.875em;
+    margin:0% auto;
+    padding: 0%;
     display:inline;
-    text-shadow:3px 3px #000000;
+    text-shadow:2px 2px #999;
 }
 
 input{
     outline:none;
 }
 
+img{
+    max-width: 100%;
+}
 
 
 /******END GLOBALS********/
 /*********Header Element*************/
 
 #logo{
-	width:275px;
+	width:42%;
 	position:relative;
-	top:10px;
-	left:10px;
+	left:5%;
+        overflow: hidden;
 }
 
 #pageIcon{
     font-family: 'Unxgala';
     color:#ff6600;
-    font-size:120px;
+    font-size:7.5em;
     float:left;
-    line-height: 120px;
-    padding: 0 15px;
-    margin: 0px auto;
+    line-height: 100%;
+    padding: 0% 5%;
+    margin: 0% auto;
     text-shadow:3px 3px #000000;
 }
 
@@ -86,9 +89,9 @@ input{
 }
 
 header p{
-    line-height: 0px;
-    font-size: 12px;
-    margin: 0px auto;
+    line-height: 0%;
+    font-size: 0.75em;
+    margin: 0% auto;
 }
 
     /****** Nav Menu *****/
@@ -119,8 +122,8 @@ nav li{
 }
 
 nav ul{
-    width:1125px;
-    margin:0px auto;
+    width:98%;
+    margin:0% auto;
 }
 
     /*******End Nav**********/
@@ -129,8 +132,8 @@ nav ul{
     /*******CTA*************/
 div#cta{
     display:block;
-    width:1025px;
-    margin:0px auto;
+    width:98%;
+    margin:0% auto;
     text-align: center;
 }
 
@@ -142,45 +145,48 @@ div#cta div#formContainer{
     display: block;
     position:relative;
     float:right;
-    margin-right:15px;
-    top: -50px;
-    width:286px;
+    margin-right:0.1333333333333%;
+    top: -0.444444444%;
+    width:50%;
 }
     
     /******END CTA*********/
     /******Section Content***/
     section{
-        width:1025px;
-        margin:0px auto;
+        width:98%;
+        margin:0% auto;
+        overflow: hidden;
     }
     
     section article p{
 		position:relative;
-        width:215px;
+        width:19.111111%;
+        font-size:1em;
         float:left;
-        margin:0px 15px;
-		margin-bottom: 40px;
+        margin:0% 15px;
+	margin-bottom: 40px;
     }
     
     section article aside p{
-        width:260px;
-        margin:0px 15px;
+        width:19%;
+        font-size:1em;
+        margin:0% 15px;
         float:right;
     }
     
     .slide{
         float:right;
-        margin-right:100px;
-        width:150px;
+        margin-right:6%;
+        width:16%;
         position: relative;
-        top:20px;
+        top:0.04%;
     }
     /******END SECTION CONTENT**/
     /******Footer******/
     
 footer{
     clear:left;
-    margin:0px auto;
+    margin:0% auto;
     overflow:hidden;
     text-align: center;
 }
@@ -190,7 +196,7 @@ footer a{
     display:block;
     height:25px;
     line-height: 25px;
-    font-size: 12px;
+    font-size: 0.75em;
 }
 
 footer a:hover{
@@ -198,10 +204,10 @@ footer a:hover{
 }
 
 footer ul{
-    margin:0px auto;
+    margin:0% auto;
     overflow:hidden;
     text-align:center;
-    width:500px;
+    width:50%;
 } 
 
 footer li{
@@ -212,14 +218,14 @@ footer li{
 }
 
 footer p {
-    font-size:11px;
-    height: 0px;
+    font-size:0.6875em;
+    height: 0%;
     position: relative;
-    line-height: 0px;
+    line-height: 0%;
 }
 
 footer div{
-    margin:0px auto;
+    margin:0% auto;
     text-align:center;
 }
     
@@ -253,9 +259,9 @@ footer div{
         display:inline-block;
         color:#ffffff;
         font-family:Trebuchet MS;
-        font-size:17px;
+        font-size:1.0625em;
         font-weight:bold;
-        padding:0px 5px;
+        padding:0% 5px;
         text-decoration:none;
         
         text-shadow:0px 1px 0px #8f7f24;
@@ -277,3 +283,176 @@ footer div{
         position:relative;
         top:1px;
     }
+
+    
+    
+    /*    Media     */
+    
+    /* tablet portrait to standard 960 */
+@media screen and (max-width: 839px) and (min-width: 768px) {
+
+    body{
+        background: #000;
+    }
+    
+    #logo{
+        width: 30%;
+        overflow: visible;
+    }
+    
+    nav{
+        width: 50%;
+    }
+    
+    footer ul{
+    width:98%;
+    }
+    
+}
+    /* Mobile landscape to tablet portrait */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+    body{
+        background: #000;
+    }
+    
+    nav{
+        width: 100%;
+    }
+    
+    div#cta img{
+        display: none;
+    }
+    
+    div#cta div#formContainer{
+        width:100%;
+        text-align:center;
+        margin-right: auto;
+    }
+    
+    section article p{
+        float:none;
+        width: 98%;
+    }
+    
+    section article aside p{
+        float:none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .slide{
+        float:none;
+        width:50%;
+        position: relative;
+        margin: 0 auto;
+    }
+    
+    footer ul{
+    width:98%;
+    }
+    
+    #logo{
+        width: 64%;
+        overflow: visible;
+    }
+    
+    #pageName{
+        width: 0%;
+        left: 6%;
+    }
+    
+    #pageIcon{
+        width: 0%;
+    }
+    
+    header p{
+        white-space: nowrap;
+    }
+}
+    
+
+    /* Mobile portrait to Mobile landscape */
+@media screen and (max-width: 479px){
+
+    
+    body{
+        background: #000;
+    }
+    
+    div#cta img{
+        display: none;
+    }
+    
+    div#cta div#formContainer{
+        width:100%;
+        text-align:center;
+        margin-right: auto;
+    }
+    
+    section article p{
+        float:none;
+        width: 98%;
+    }
+    
+    nav{
+        width: 100%;
+        float: left;
+    }
+    
+    section article aside p{
+        float:none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .slide{
+        float:none;
+        width:50%;
+        position: relative;
+        margin: 0 auto;
+    }
+    
+    footer ul{
+    width:29%;
+    }
+    
+    #logo{
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    #pageName{
+        width: 100%;
+        left: 6%;
+    }
+    
+    #pageIcon{
+        width: 0%;
+    }
+    
+    header p{
+        white-space: nowrap;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 840px) and (max-width: 1075px){
+
+    #logo{
+        width: 27%;
+        overflow: hidden;
+    }
+    
+}
+
+@media screen and (min-width: 1075px){
+
+    #logo{
+        width: 20%;
+        overflow: hidden;
+    }
+    
+}
