@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-    <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        
+
         <title>GALAXERY</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width initial-scale=1, maximum-scale=1">
@@ -25,13 +25,13 @@
             <p class="foxframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&sqi=2&ved=0CEgQjBAwAQ&url=http%3A%2F%2Fwww.mozilla.org%2Fen-US%2Ffirefox%2Fall%2F&ei=yQ9zUubBNpCFkQeCsoHoAQ&usg=AFQjCNEHQGdx-EMlKV7b4r31LNqgNEWeUw&sig2=VI398uzHM448ySFLRfmbMw&bvm=bv.55819444,d.eW0">Install Mozilla Firefox</a> to better experience this site.</p>
         <![endif]-->
         <header>
-			<div id="logo">
-				<span id="pageIcon">&Gamma;</span>
-				<div id="pageName">
-				<h1>GALAXERY</h1>
-				<p>Photo Gallery To The Stars!</p>
-				</div>
-			</div>
+            <div id="logo">
+                <span id="pageIcon">&Gamma;</span>
+                <div id="pageName">
+                    <h1>GALAXERY</h1>
+                    <p>Photo Gallery To The Stars!</p>
+                </div>
+            </div>
             <nav>
                 <ul>
                     <li>
@@ -78,36 +78,95 @@
                 <em>Your</em> Universe
             </h2>
             <article>
-                    <p>Your apart of something <strong>Huge!</strong>
-                    Imagine you are on the equator and you are standing still.  You are still moving over 1000 mph while Earth rotates.  On top of that, you are moving over 60k mph around the sun.  </p><p>Then the solar system is moving through the galaxy at over 400k mph.  For the sake of ending the math, we will stop at the galaxy moving through the universe at over 2 million mph.  When you add everything up you are moving at well over 2.4 million mph while you are standing still.</p><p>  Galaxery is here to provide you with some of the scenery that you pass without being able to really see what it is that you are looking at.  Our gallaries cover Stars, Planets, Moons, and other celestial objects.  go ahead and click on one of our navigation links to start traveling the heavens 
-                    </p>
-                    <aside>
-                        <p>Lets go and explore the <a href="#" class="myButton">Universe</a></p>
-                    </aside>
-					<div class="slide">
-						<img src="img/planet1.jpg" alt="Planet">
-						<img src="img/planet2.jpg" alt="Planet">
-						<img src="img/sun1.jpg" alt="Sun">
-						<img src="img/comet1.jpg" alt="Comet">
-					</div>
+                <p>Your apart of something <strong>Huge!</strong>
+                    Imagine you are on the equator and you are standing still.  You are still moving over 1000 mph while Earth rotates.  On top of that, you are moving over 60k mph around the sun.  </p><p>Then the solar system is moving through the galaxy at over 400k mph.  For the sake of ending the math, we will stop at the galaxy moving through the universe at over 2 million mph.  When you add everything up you are moving at well over 2.4 million mph while you are standing still.</p><p>  Galaxery is here to provide you with some of the scenery that you pass without being able to really see what it is that you are looking at.  Our gallaries cover Stars, Planets, Moons, and other celestial objects.  go ahead and click on one of our navigation links to start traveling the heavens
+                </p>
+                <aside>
+                    <p>Lets go and explore the <a href="#" class="myButton">Universe</a></p>
+                </aside>
+                <div class="slide">
+                    <img src="img/planet1.jpg" alt="Planet">
+                    <img src="img/planet2.jpg" alt="Planet">
+                    <img src="img/sun1.jpg" alt="Sun">
+                    <img src="img/comet1.jpg" alt="Comet">
+                </div>
             </article>
+        </section>
+        <section>
+            <div id="signupContianer">
+                <h2>Newsletter Sign-up</h2>
+                <form method="post" name="newsletter">
+                    <div class="labelContainer"><label>Prefix:</label></div><select name="prefix">
+                        <option value="Mr.">Mr.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Mrs.">Mrs.</option>
+                    </select><br><br>
+                    <div class="labelContainer">
+                        <label>First Name:</label>
+                    </div>
+                    <input type="text" name="firstname"><br><br>
+                    <div class="labelContainer">
+                        <label>Last Name:</label>
+                    </div>
+                    <input type="text" name="lastname"><br><br>
+                    <div class="labelContainer">
+                        <label>Email:</label>
+                    </div>
+                    <input type="text" name="email"><br><br>
+                    <h3>Account Type</h3>
+                    <div id="radioContainer">
+                    <div class="labelContainer">
+                        <label>Ursa Minor:</label>
+                    </div>
+                    <input type="radio" name="acctType" value="free">
+                    </div><br>
+                    <div id="radioContainer">
+                    <div class="labelContainer">
+                        <label>Ursa Major:</label>
+                    </div>
+                    <input type="radio" name="acctType" value="pro">
+                    </div>
+                </form>
+            </div>
+            <div id="signupOptions">
+                <table id="signupTable">
+                    <tr>
+                        <th>Account Type</th>
+                        <th>Benefit</th>
+                        <th>Cycle</th>
+                        <th>Cost</th>
+                    </tr>
+                    <tr>
+                        <td>Ursa Minor</td>
+                        <td>Keep up to date on major celestial events.</td>
+                        <td>Monthly</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td>Ursa Major</td>
+                        <td>Keep up to date on all celestial events viewable from earth.  Live satillite feed access from NASA.  Localized information to keep you aware of what will be viewable from your location.</td>
+                        <td>Weekly</td>
+                        <td>$10.00 / Month</td>
+                    </tr>
+                </table>
+            </div>
         </section>
         <footer>
             <div>
-            <ul>
-               <li>
-                   <a href="#">Home Page</a>
-               </li>
-               <li>
-                   <a href="#">Gallery List</a>
-               </li>
-               <li>
-                   <a href="#">Contact</a>
-               </li>
-               <li>
-                   <a href="#">About</a>
-               </li>
-            </ul>
+                <ul>
+                    <li>
+                        <a href="#">Home Page</a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery List</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                </ul>
             </div>
             <p>&copy;&nbsp;2013</p>
         </footer>

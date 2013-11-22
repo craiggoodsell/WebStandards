@@ -1,4 +1,4 @@
-/* 
+/*
     Document   : galaxery
     Created on : Nov 7, 2013, 9:30:00 PM
     Author     : craiggoodsell
@@ -8,8 +8,8 @@
 /*********GLOBALS**********/
 
 @font-face {
-	font-family: 'Unxgala';
-    	src: url('fonts/Unxgala.ttf');
+    font-family: 'Unxgala';
+    src: url('fonts/Unxgala.ttf');
 }
 
 body{
@@ -59,15 +59,19 @@ img{
     max-width: 100%;
 }
 
-
+.labelContainer{
+    width: 100px;
+    float: left;
+    color: #ffffff;
+}
 /******END GLOBALS********/
 /*********Header Element*************/
 
 #logo{
-	width:42%;
-	position:relative;
-	left:5%;
-        overflow: hidden;
+    width:42%;
+    position:relative;
+    left:5%;
+    overflow: hidden;
 }
 
 #pageIcon{
@@ -82,10 +86,10 @@ img{
 }
 
 #pageName{
-	position:relative;
-	top:35px;
-	left:-55px;
-        width:276px;
+    position:relative;
+    top:35px;
+    left:-55px;
+    width:276px;
 }
 
 header p{
@@ -94,7 +98,7 @@ header p{
     margin: 0% auto;
 }
 
-    /****** Nav Menu *****/
+/****** Nav Menu *****/
 
 nav{
     clear:left;
@@ -126,10 +130,10 @@ nav ul{
     margin:0% auto;
 }
 
-    /*******End Nav**********/
+/*******End Nav**********/
 /*******End Header**********/
 /*******Main Content**********/
-    /*******CTA*************/
+/*******CTA*************/
 div#cta{
     display:block;
     width:98%;
@@ -149,41 +153,69 @@ div#cta div#formContainer{
     top: -0.444444444%;
     width:50%;
 }
-    
-    /******END CTA*********/
-    /******Section Content***/
-    section{
-        width:98%;
-        margin:0% auto;
-        overflow: hidden;
-    }
-    
-    section article p{
-		position:relative;
-        width:19.111111%;
-        font-size:1em;
-        float:left;
-        margin:0% 15px;
-	margin-bottom: 40px;
-    }
-    
-    section article aside p{
-        width:19%;
-        font-size:1em;
-        margin:0% 15px;
-        float:right;
-    }
-    
-    .slide{
-        float:right;
-        margin-right:6%;
-        width:16%;
-        position: relative;
-        top:0.04%;
-    }
-    /******END SECTION CONTENT**/
-    /******Footer******/
-    
+
+/******END CTA*********/
+/******Section Content***/
+section{
+    width:98%;
+    margin:0% auto;
+    overflow: hidden;
+}
+
+section article p{
+    position:relative;
+    width:19.111111%;
+    font-size:1em;
+    float:left;
+    margin:0% 15px;
+    margin-bottom: 40px;
+}
+
+section article aside p{
+    width:19%;
+    font-size:1em;
+    margin:0% 15px;
+    float:right;
+}
+
+.slide{
+    float:right;
+    margin-right:6%;
+    width:16%;
+    position: relative;
+    top:0.04%;
+}
+
+#signupContianer{
+    width: 30%;
+    margin: 0 auto;
+    float: left;
+}
+
+#signupOptions{
+    color: #ff6600;
+    width: 70%;
+    margin: 8% auto;
+}
+
+#signupTable{
+    background: #333333;
+    border: 1px solid #ffffff;
+    border-collapse: collapse;
+    table-layout: fixed;
+    overflow: hidden;
+}
+
+#signupTable td, #signupTable tr, #signupTable td{
+    border: 1px solid #ffffff;
+    min-width: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+/******END SECTION CONTENT**/
+/******Footer******/
+
 footer{
     clear:left;
     margin:0% auto;
@@ -208,7 +240,7 @@ footer ul{
     overflow:hidden;
     text-align:center;
     width:50%;
-} 
+}
 
 footer li{
     width:125px;
@@ -228,213 +260,213 @@ footer div{
     margin:0% auto;
     text-align:center;
 }
-    
-    /******END FOOTER****/
-    
-    
-    /*** CSS BUTTON ***/
-    
-    
-    
-    .myButton {
-        
-        -moz-box-shadow:inset 0px 1px 0px 0px #ffe0b5;
-        -webkit-box-shadow:inset 0px 1px 0px 0px #ffe0b5;
-        box-shadow:inset 0px 1px 0px 0px #ffe0b5;
-        
-        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f09c65), color-stop(1, #ff6600));
-        background:-moz-linear-gradient(top, #f09c65 5%, #ff6600 100%);
-        background:-webkit-linear-gradient(top, #f09c65 5%, #ff6600 100%);
-        background:-o-linear-gradient(top, #f09c65 5%, #ff6600 100%);
-        background:-ms-linear-gradient(top, #f09c65 5%, #ff6600 100%);
-        background:linear-gradient(to bottom, #f09c65 5%, #ff6600 100%);
-        /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09c65', endColorstr='#ff6600',GradientType=0);
-        */
-        background-color:#f09c65;
-        
-        -moz-border-radius:7px;
-        -webkit-border-radius:7px;
-        border-radius:7px;
-        
-        display:inline-block;
-        color:#ffffff;
-        font-family:Trebuchet MS;
-        font-size:1.0625em;
-        font-weight:bold;
-        padding:0% 5px;
-        text-decoration:none;
-        
-        text-shadow:0px 1px 0px #8f7f24;
-        
-    }
-    .myButton:hover {
-        
-        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff6600), color-stop(1, #f09c65));
-        background:-moz-linear-gradient(top, #ff6600 5%, #f09c65 100%);
-        background:-webkit-linear-gradient(top, #ff6600 5%, #f09c65 100%);
-        background:-o-linear-gradient(top, #ff6600 5%, #f09c65 100%);
-        background:-ms-linear-gradient(top, #ff6600 5%, #f09c65 100%);
-        background:linear-gradient(to bottom, #ff6600 5%, #f09c65 100%);
-        /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6600', endColorstr='#f09c65',GradientType=0);
-        */
-        background-color:#ff6600;
-    }
-    .myButton:active {
-        position:relative;
-        top:1px;
-    }
 
-    
-    
-    /*    Media     */
-    
-    /* tablet portrait to standard 960 */
+/******END FOOTER****/
+
+
+/*** CSS BUTTON ***/
+
+
+
+.myButton {
+
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffe0b5;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffe0b5;
+    box-shadow:inset 0px 1px 0px 0px #ffe0b5;
+
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f09c65), color-stop(1, #ff6600));
+    background:-moz-linear-gradient(top, #f09c65 5%, #ff6600 100%);
+    background:-webkit-linear-gradient(top, #f09c65 5%, #ff6600 100%);
+    background:-o-linear-gradient(top, #f09c65 5%, #ff6600 100%);
+    background:-ms-linear-gradient(top, #f09c65 5%, #ff6600 100%);
+    background:linear-gradient(to bottom, #f09c65 5%, #ff6600 100%);
+    /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09c65', endColorstr='#ff6600',GradientType=0);
+    */
+    background-color:#f09c65;
+
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+
+    display:inline-block;
+    color:#ffffff;
+    font-family:Trebuchet MS;
+    font-size:1.0625em;
+    font-weight:bold;
+    padding:0% 5px;
+    text-decoration:none;
+
+    text-shadow:0px 1px 0px #8f7f24;
+
+}
+.myButton:hover {
+
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff6600), color-stop(1, #f09c65));
+    background:-moz-linear-gradient(top, #ff6600 5%, #f09c65 100%);
+    background:-webkit-linear-gradient(top, #ff6600 5%, #f09c65 100%);
+    background:-o-linear-gradient(top, #ff6600 5%, #f09c65 100%);
+    background:-ms-linear-gradient(top, #ff6600 5%, #f09c65 100%);
+    background:linear-gradient(to bottom, #ff6600 5%, #f09c65 100%);
+    /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6600', endColorstr='#f09c65',GradientType=0);
+    */
+    background-color:#ff6600;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+
+
+/*    Media     */
+
+/* tablet portrait to standard 960 */
 @media screen and (max-width: 839px) and (min-width: 768px) {
 
     body{
         background: #000;
     }
-    
+
     #logo{
         width: 30%;
         overflow: visible;
     }
-    
+
     nav{
         width: 50%;
     }
-    
+
     footer ul{
-    width:98%;
+        width:98%;
     }
-    
+
 }
-    /* Mobile landscape to tablet portrait */
+/* Mobile landscape to tablet portrait */
 @media screen and (min-width: 480px) and (max-width: 767px) {
 
     body{
         background: #000;
     }
-    
+
     nav{
         width: 100%;
     }
-    
+
     div#cta img{
         display: none;
     }
-    
+
     div#cta div#formContainer{
         width:100%;
         text-align:center;
         margin-right: auto;
     }
-    
+
     section article p{
         float:none;
         width: 98%;
     }
-    
+
     section article aside p{
         float:none;
         width: 100%;
         text-align: center;
     }
-    
+
     .slide{
         float:none;
         width:50%;
         position: relative;
         margin: 0 auto;
     }
-    
+
     footer ul{
-    width:98%;
+        width:98%;
     }
-    
+
     #logo{
         width: 64%;
         overflow: visible;
     }
-    
+
     #pageName{
         width: 0%;
         left: 6%;
     }
-    
+
     #pageIcon{
         width: 0%;
     }
-    
+
     header p{
         white-space: nowrap;
     }
 }
-    
 
-    /* Mobile portrait to Mobile landscape */
+
+/* Mobile portrait to Mobile landscape */
 @media screen and (max-width: 479px){
 
-    
+
     body{
         background: #000;
     }
-    
+
     div#cta img{
         display: none;
     }
-    
+
     div#cta div#formContainer{
         width:100%;
         text-align:center;
         margin-right: auto;
     }
-    
+
     section article p{
         float:none;
         width: 98%;
     }
-    
+
     nav{
         width: 100%;
         float: left;
     }
-    
+
     section article aside p{
         float:none;
         width: 100%;
         text-align: center;
     }
-    
+
     .slide{
         float:none;
         width:50%;
         position: relative;
         margin: 0 auto;
     }
-    
+
     footer ul{
-    width:29%;
+        width:29%;
     }
-    
+
     #logo{
         width: 100%;
         overflow: hidden;
     }
-    
+
     #pageName{
         width: 100%;
         left: 6%;
     }
-    
+
     #pageIcon{
         width: 0%;
     }
-    
+
     header p{
         white-space: nowrap;
     }
-    
+
 }
 
 
@@ -445,7 +477,7 @@ footer div{
         width: 27%;
         overflow: hidden;
     }
-    
+
 }
 
 @media screen and (min-width: 1075px){
@@ -454,5 +486,5 @@ footer div{
         width: 20%;
         overflow: hidden;
     }
-    
+
 }
